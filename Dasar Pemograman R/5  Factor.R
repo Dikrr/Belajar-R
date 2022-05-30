@@ -23,3 +23,10 @@ levels(faktor.bulan)[1] <- "Januari"
 
 #angka dalam factor akan tetap di masukan ke dalam levels
 factor.umur <- factor(c(12, 35, 24, 12, 35, 37))
+
+#Jika ketiganya dimasukkan ke dalam factor melalui deklarasi vector, maka prinsip berikut tetap berlaku:
+#Na dan NaN akan menjadi bagian dari isi factor, NULL akan dihilangkan
+#Hanya NaN yang akan dikenali sebagai levels
+
+factor.lokasi <- factor(c("Bandung", "Jakarta", NA, "Jakarta", NaN, "Medan", NULL, NULL, "Bandung"))
+length(factor.lokasi) #hanya NULL yang tidak dihitung

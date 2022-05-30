@@ -16,3 +16,4 @@ length(ini.na)
 #NULL
 #inf (infinite)
 #NaN (Not a Number)
+
