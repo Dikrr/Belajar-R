@@ -18,6 +18,7 @@ as.integer(faktor.bulan)
 as.character(faktor.bulan)
 
 #mengganti nilai dalam factor
+faktor.bulan <- factor(c("Jan", "Feb", "Mar"))
 levels(faktor.bulan)[2] <- "Februari"
 levels(faktor.bulan)[1] <- "Januari"
 
@@ -30,3 +31,6 @@ factor.umur <- factor(c(12, 35, 24, 12, 35, 37))
 
 factor.lokasi <- factor(c("Bandung", "Jakarta", NA, "Jakarta", NaN, "Medan", NULL, NULL, "Bandung"))
 length(factor.lokasi) #hanya NULL yang tidak dihitung
+
+#membuat ulang levels factor
+factor(c("Jan","Feb","Mar","Jan","Mar"), levels = c("Jan", "Feb", "Mar"))
